@@ -1,6 +1,6 @@
 # Information Retrieval to RAG Workshop
 
-**Build a complete information retrieval and RAG pipeline with Oracle AI Database and OpenAI**
+**Build a complete information retrieval and RAG pipeline with Oracle AI Database and OCI GenAI (xAI Grok 3 Fast)**
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/speechlyze/information_retrieval_to_RAG)
 
@@ -8,7 +8,7 @@
 
 ## What You Will Build
 
-Starting from raw data, you will construct a **Research Paper Assistant** — a system that retrieves and reasons over 200 ArXiv papers stored in Oracle AI Database. Along the way you'll implement five retrieval strategies (keyword, vector, hybrid, and graph) and build an end-to-end RAG pipeline that connects Oracle retrieval to OpenAI generation.
+Starting from raw data, you will construct a **Research Paper Assistant** — a system that retrieves and reasons over 200 ArXiv papers stored in Oracle AI Database. Along the way you'll implement five retrieval strategies (keyword, vector, hybrid, and graph) and build an end-to-end RAG pipeline that connects Oracle retrieval to OCI GenAI (xAI Grok 3 Fast).
 
 ## Workshop Parts
 
@@ -66,7 +66,7 @@ Starting from raw data, you will construct a **Research Paper Assistant** — a 
 
 You will need:
 - A GitHub account (free)
-- An OpenAI API key — needed from Part 5 onwards
+- `OCI_GENAI_API_KEY` and `TAVILY_API_KEY` are pre-configured as Codespace environment variables — no manual setup required
 
 > **Note:** On subsequent Codespace opens, Oracle should start automatically via `postStartCommand`. If you ever see a connection error in the notebook, run step 4 above again from the terminal.
 
@@ -120,7 +120,7 @@ information_retrieval_to_RAG/
 - Oracle AI Database via `gvenzl/oracle-free:23-full`
 - `sentence-transformers` — local embedding model (nomic-embed-text-v1.5, 768-dim), no API key needed
 - `oracledb` — Python Oracle driver
-- `OpenAI API` — LLM generation (GPT-5)
+- `OCI GenAI` — LLM generation (xAI Grok 3 Fast via OpenAI-compatible endpoint)
 
 ## Where to Next?
 
