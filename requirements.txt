@@ -1,0 +1,12 @@
+oracledb
+pandas
+sentence-transformers
+datasets
+einops
+numpy<2.0
+openai
+tqdm
+jupyter
+ipykernel
+ipywidgets
+matplotlib
